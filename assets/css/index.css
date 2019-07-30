@@ -1,0 +1,108 @@
+html, body {
+  position: relative;
+  height: 100%;
+  font-weight: 300; }
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.fl-r {
+  float: right;
+  padding-top: 2px; }
+
+.fa-phone, .fa-location-arrow {
+  color: #07c160; }
+
+.fa-chevron-right {
+  color: #999999; }
+
+.swiper-container {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #e9e9e9; }
+  .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+
+.mark .call {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e9e9e9; }
+.mark .address {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e9e9e9; }
+
+.common {
+  background: #fff;
+  margin-bottom: 6px; }
+  .common .title {
+    padding: 8px;
+    border-bottom: 1px solid #e9e9e9; }
+  .common .content {
+    padding: 8px;
+    font-size: 14px; }
+
+.notes {
+  margin-bottom: 58px; }
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-shadow: -5px 0 10px -5px #999999;
+  background-color: white; }
+  .footer div {
+    float: left;
+    height: 50px; }
+  .footer .total_time {
+    width: 70%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px; }
+    .footer .total_time .clock {
+      margin-left: 10px; }
+    .footer .total_time .count .price {
+      color: #07c160;
+      font-size: 20px; }
+    .footer .total_time .count .total_num {
+      margin-left: 10px; }
+      .footer .total_time .count .total_num span {
+        color: #07c160;
+        font-size: 14px; }
+  .footer .btn {
+    width: 30%;
+    background-color: #07c160;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400; }
+    .footer .btn a {
+      color: white; }
+
+/*# sourceMappingURL=index.css.map */

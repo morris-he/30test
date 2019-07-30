@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 300;
+}
+
+.clearfix:after {
+  content: "." ;
+  display: block ;
+  height: 0 ;
+  clear: both ;
+  visibility: hidden ;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  span {
+    font-size: 14px;
+    color: #999999;
+  }
+}
+
+.pick_date {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 20px 0;
+  display: flex;
+  .date_list {
+    display: flex;
+    width: 88%;
+    .date_message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      font-size: 14px;
+      .date_text {
+        color: #999999;
+      }
+      .date_num {
+        color: black;
+      }
+    }
+    .on{
+      .date_text {
+        color: #07c160;
+      }
+      .date_num {
+        color: #07c160;
+      }
+    }
+  }
+
+  .date_picker{
+    width: 12%;
+    box-shadow:-5px 0 10px -5px #999999;
+    text-align: center;
+    position: relative;
+    #my-input{
+      border: none;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 30%;
+      top: 10%;
+      background-color: transparent;
+      color: transparent;
+    }
+    img{
+      width: 30px;
+      padding-top: 0.4em;
+    }
+  }
+}
+
+.pick_time {
+  display: none;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    .time_list {
+      flex-shrink: 1;
+      flex-basis: 30%;
+      height: 4em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid #dddddd;
+      margin-bottom: 10px;
+      color: #dddddd;
+      font-size: 14px;
+      .check_text {
+        span {
+          display: none;
+        }
+        .active {
+          display: block;
+        }
+      }
+    }
+    .can_choose{
+      color: black;
+      border: 1px solid black;
+    }
+    .choosed{
+      color: #07c160;
+      border: 1px solid #07c160;
+    }
+  }
+}
+
+.show{
+  display: block;
+}
+
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-shadow:-5px 0 10px -5px #999999;
+  div{
+    float:left;
+    height: 50px;
+  }
+  .total_time{
+    width: 70%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    .clock{
+      margin-left:10px;
+    }
+    .count{
+      .price{
+        color: #07c160;
+        font-size: 16px;
+      }
+      .total_num{
+        margin-left:10px;
+        span{
+          color: #07c160;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .btn{
+    width: 30%;
+    background-color: #07c160;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 400;
+  }
+}

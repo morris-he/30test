@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>场馆预定</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--轮播图-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="mark common">
+    <div class="title">适用门店<span>(1)</span> <i class="fa fa-chevron-right fl-r"></i></div>
+    <div class="call">
+        <div class="name">上海点匠网球俱乐部</div>
+        <a href="tel:123"><i class="fa fa-phone"></i></a>
+    </div>
+    <div class="address"><i class="fa fa-location-arrow"></i> 详细地址：xxxx</div>
+</div>
+
+<div class="details common">
+    <div class="title">预约详情</div>
+    <div class="content">网球场馆及时间预定</div>
+</div>
+
+<div class="reader common">
+    <div class="title">使用说明</div>
+    <div class="content">可根据时间直接选择场地进行预约</div>
+</div>
+
+<div class="notes common">
+    <div class="title">购买须知</div>
+    <div class="content">不限购</div>
+
+</div>
+
+<div class="footer clearfix">
+    <div class="total_time">
+        <div class="clock">最低价</div>
+        <div class="count">
+            <div class="price">￥60.00</div>
+            <div class="total_num"> / 小时起</div>
+        </div>
+    </div>
+    <div class="btn"><a href="date.html">立即订场</a></div>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script>
+	// 是测试
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+</body>
+</html>

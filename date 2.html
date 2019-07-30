@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="assets/css/date.css">
+</head>
+<body>
+
+<div class="header">
+    选择预约时间<span>(可多选)</span>
+</div>
+<!--日期选择 共5天-->
+<div class="pick_date">
+    <ul class="date_list">
+        <li class="date_message on">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+        <li class="date_message">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+        <li class="date_message">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+        <li class="date_message">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+        <li class="date_message">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+        <li class="date_message">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+        <li class="date_message">
+            <div class="date_text">今天</div>
+            <div class="date_num"></div>
+        </li>
+    </ul>
+
+    <div class="date_picker">
+        <input type="text" id="my-input" data-toggle='date'/>
+        <img src="assets/images/date.png" alt="">
+    </div>
+</div>
+
+<!--时间选项卡-->
+<!--class: can_choose 可选   choosed 已选  active 可预约-->
+<div class="pick_time show">
+    <ul>
+        <li class="time_list">
+            <div class="time_hour">08:00-09:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list can_choose">
+            <div class="time_hour">09:00-10:00</div>
+            <div class="check_text"><span>不可预约</span><span class="active">可预约</span></div>
+        </li>
+        <li class="time_list choosed">
+            <div class="time_hour">10:00-11:00</div>
+            <div class="check_text"><span>不可预约</span><span class="active">可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+    </ul>
+</div>
+<div class="pick_time">
+    <ul>
+        <li class="time_list">
+            <div class="time_hour">22:00-09:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">09:00-10:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">10:00-11:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+    </ul>
+</div>
+<div class="pick_time">
+    <ul>
+        <li class="time_list">
+            <div class="time_hour">33:00-09:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">09:00-10:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">10:00-11:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+    </ul>
+</div>
+<div class="pick_time">
+    <ul>
+        <li class="time_list">
+            <div class="time_hour">44:00-09:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">09:00-10:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">10:00-11:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+    </ul>
+</div>
+<div class="pick_time">
+    <ul>
+        <li class="time_list">
+            <div class="time_hour">55:00-09:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">09:00-10:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">10:00-11:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+        <li class="time_list">
+            <div class="time_hour">11:00-12:00</div>
+            <div class="check_text"><span class="active">不可预约</span><span>可预约</span></div>
+        </li>
+    </ul>
+</div>
+
+<div class="footer clearfix">
+    <div class="total_time">
+        <div class="clock">价格</div>
+        <div class="count">
+            <div class="price">￥0.00</div>
+            <div class="total_num">共 <span>0</span> 个时段</div>
+        </div>
+    </div>
+    <div class="btn">选好了</div>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+<script src="assets/js/date.js"></script>
+
+<script>
+
+
+</script>
+</body>
+</html>
